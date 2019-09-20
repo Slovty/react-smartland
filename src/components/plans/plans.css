@@ -1,0 +1,18 @@
+.test7-add-head .ant-row .ant-col-12 .ant-input {
+    width: 150px;
+    margin: 0 8px 8px 8px;
+}
+
+.test7-add-head-comment{
+    width: 318px !important;
+    margin: 0 8px 8px 8px;
+}
+
+.test7-add-middle {
+    text-align: center;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+.test7-Date-Modal {
+    text-align: center;
+}
