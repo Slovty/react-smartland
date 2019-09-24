@@ -9,12 +9,13 @@ import AddPlan from './addPlan'
 import Detail from './detail'
 import ModifyFun from './modifyFun'
 import Check from './check'
-
+import  '../../config'
 
 
 
 class plans extends React.Component {
     constructor(props) {
+        console.log(global.dataSource.reqUrl)
         super(props);
         this.state = {
             startDate: '',  // 开始时间
@@ -164,7 +165,7 @@ class plans extends React.Component {
         var optionData = []
         const _this = this;
         //请求审核状态的api
-        var url     = 'http://hnulab.org:28888/productPlan/zh/findshzt'
+        var url     = global.dataSource.reqUrl+'productPlan/zh/findshzt'
 
         axios.get(url)
             .then(function (response) {
@@ -224,7 +225,7 @@ class plans extends React.Component {
 
         // 根据查询参数调用查询接口获得数据,且组装
         const _this = this;    //先存一下this，以防使用箭头函数this会指向我们不希望它所指向的对象。
-        var url     = 'http://hnulab.org:28888/productPlan/zh/findAll'
+        var url     = global.dataSource.reqUrl+'productPlan/zh/findAll'
         var params  = {
             btime:startDatestmp,
             etime:endDatestmp,

@@ -5,6 +5,7 @@ import FunButton from "../public/funButton";
 import './plans.css'
 import {Select} from "antd/lib/select";
 import moment from 'moment';
+import  '../../config'
 
 class AddModal extends React.Component {
 
@@ -238,7 +239,7 @@ class AddModal extends React.Component {
 
 
         //2. post到服务器上，得到下方表格的数据 ，然后处理后渲染展示
-        var url    = 'http://hnulab.org:28888/productPlan/mfycj/genPlan'
+        var url    = global.dataSource.reqUrl+'productPlan/planManagement/mfycj/genPlan'
         var params = {
             "bz": note,
             "jhsj": moment().format('YYYY-MM-DD HH:mm:ss'),
