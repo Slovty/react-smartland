@@ -5,7 +5,7 @@
   "dependencies": {
     "ajv": "^6.0.0",
     "antd": "^3.10.1",
-    "axios": "^0.18.0",
+    "axios": "^0.21.1",
     "babel-polyfill": "^6.26.0",
     "customize-cra": "^0.2.14",
     "express": "^4.16.4",
